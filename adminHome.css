@@ -1,0 +1,75 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+.wrapper
+{
+    width: 380px;
+    margin: auto;
+
+}
+.cover
+{
+    height: 160px;
+    background: gray;
+
+}
+.cover img
+{
+    width: 100%;
+    height: 160px;
+}
+.circle
+{
+    width: 155px;
+    height: 155px;
+    margin: auto;
+    border-radius: 50%;
+    border: 3px solid white;
+    position: relative;
+    top: -90px;
+}
+.logo
+{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+.id
+{
+    position: relative;
+    top: -80px;
+    text-align: center;
+
+}
+h5
+{
+   color: rgb(56, 54, 54);
+   font-weight: bold;
+}
+
+main
+{
+    margin-left: 80px;
+
+}
+span
+{
+    color: red;
+}
+.button
+{
+    background-color: black;
+    color: white;
+    padding: 15px 32px;
+    margin-left: 90px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 50px;
+    cursor: pointer;
+}

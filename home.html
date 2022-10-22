@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="home.css">
+    <link rel="shortcut icon" href="icon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+    <title>Another Life Medical Care</title>
+</head>
+<body>
+    <!-- loading page  -->
+    <div id="preloader"></div>
+    <!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/Yf5d_Zx3AaI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><iframe width="560" height="315" src="https://www.youtube.com/embed/Yf5d_Zx3AaI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><iframe width="560" height="315" src="https://www.youtube.com/embed/Yf5d_Zx3AaI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><iframe width="560" height="315" src="https://www.youtube.com/embed/Yf5d_Zx3AaI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
+  <!-- end of loading page  -->
+
+
+  <!-- start of menu side bar -->
+  <div class="Menu" id="menu">  <!--already hidden-->
+       <div class="text">Side Menu</div>
+       <ul>
+        <li onclick="CloseMenu()"><a href="#home"><i class="fa-solid fa-house"></i>Home</a></li>
+        <li onclick="CloseMenu()"><a href="#service"><i class="fa-solid fa-stethoscope"></i>Services</a></li>
+        <li onclick="CloseMenu()"><a href="#AboutUs"><i class="fa-solid fa-address-card"></i>About</a></li>
+        <li onclick="CloseMenu()"><a href="#OurValues"><i class="fa-solid fa-heart"></i>Our Values</a></li>
+        <li onclick="CloseMenu()"><a href="#title"><i class="fa-solid fa-comment-medical"></i>Feedback</a></li>
+       </ul>
+  </div>
+  <!-- end of menu side bar -->
+
+
+
+  <!--START of the new header-->
+
+  <nav>
+    <img src="logo5.jpg" alt="logo" class="logo" id="logo">
+    <ul>
+        <li><a class="link" href="#home">Home</a></li>
+        <li><a class="link" href="#service">Services</a></li>
+        <li><a class="link" href="#AboutUs">About</a></li>
+        <li><a class="link" href="#OurValues">Our Values</a></li>
+        <li><a class="link" href="#title">Feedback</a></li>
+        <li><i class="fa-solid fa-moon" id="icon"></i></li>
+        <li class="ham" onclick="OpenMenu()" id="ham"><i class="fa-solid fa-bars" id="icon2"></i></li>
+    </ul>
+  </nav>
+
+  <!--End of the new header-->
+
+ <br>
+ <br>
+
+ 
+
+  <!--no problem in the above code-->
+    
+     <div class="hero-image" id="home">
+        <div class="box">
+            <div class="spacing">
+                <h1><b>Not just better</b></h1>
+                <h1><b>healthcare, But a better </b></h1>
+                <h1><b>healthcare experience</b></h1>
+            </div>
+            <div class="button">
+            <a  class="link1" href="SULI.html">
+                Book An Appointment
+            </a>
+            </div>
+            <div class="button2">
+            <a  class="link1" href="SULI.html">
+                log in as admin
+            </a>
+
+            </div>
+
+        </div>
+     </div>
+
+     <!-- main content  -->
+    
+    <main class="block">
+        <!--service -->
+     <div id="service">
+        <div class="item item1">
+            <div class="spacing2">
+               <h1 style="color: var(--secondary-color);"><b>Our Services</b></h1>
+               <h4 style="color: var(--ourinfo-color);">24 hours emergency assistance call us</h4>
+               <br>
+            <div class="button3">
+                   <a class="link1" href="tel:123-456-7890">123-456-7890</a>
+            </div>
+            </div>
+        </div>  
+
+        <!--heart-->
+        <div class="item">
+            <img class="icon" id="heart" src="heart.png" alt="heart">
+            <div class="content-spacing">
+            <h3 style="color: var(--secondary-color);"><b>Cardiovascular care</b></h3><br>
+            <p>Ascension Cardiovascular Doctors Are Here To Diagnose And Treat Your Heart Conditions.</p><br>
+            <div class="button4">
+                <a class="link2" href="heart.html">Learn more</a>
+            </div>
+        </div>
+        </div>   
+
+
+        <!--bones-->
+        <div class="item">
+            <img  class="icon" id="bone" src="bone.png" alt="boneicon">
+            <div class="content-spacing">
+            <h3 style="color: var(--secondary-color);"><b>Orthopedic clinic</b></h3><br>
+            <p>Orthopedics is the medical field that focuses on diseases and conditions that affect your musculoskeletal system.</p><br>
+            <div class="button4">
+                <a class="link2" href="bone.html">Learn more</a>
+            </div>
+            </div>
+        </div>   
+
+        <!--kids-->
+        <div class="item">
+            <img class="icon" id="kids" src="kids.png" alt="kid">
+            <div class="content-spacing">
+            <h3 style="color: var(--secondary-color);"><b>Children`s Clinics</b></h3><br>
+            <p>The Children's Doctor is a unique paediatric practice combining doctors and allied health professionals in a number of key fields all under the same roof.</p><br>
+            <div class="button4">
+                <a class="link2" href="kids.html">Learn more</a>
+            </div>
+            </div>
+        </div>   
+
+        <!--eyes-->
+        <div class="item">
+            <img class="icon" id="eye" src="eye.png" alt="eyes">
+            <div class="content-spacing">
+            <h3 style="color: var(--secondary-color);"><b>Ophthalmologists </b></h3><br>
+            <p>At Another life, we provide expert eye care for all ages ranging from simple eye exams to diagnosing and treating the most complex eye diseases.</p><br>
+            <div class="button4">
+                <a class="link2" href="eye.html">Learn more</a>
+            </div>
+            </div>
+        </div>   
+
+
+        <!--dentist-->
+        <div class="item">
+            <img class="icon" id="dentist" src="tooth.png" alt="tooth">
+             
+            <div class="content-spacing">
+            <h3 style="color: var(--secondary-color);"><b>Dental clinics</b></h3><br>
+            <p>Another life provided the latest in dental technology and a staff of the highest qualifications to produce the utopia of dental surgeries. </p><br>
+            <div class="button4">
+                <a class="link2" href="dentist.html">Learn more</a>
+            </div>
+            </div>
+
+        </div>   
+
+
+        <!--brain-->
+        <div class="item">
+            <img class="icon" id="brain" src="neurologist.png" alt="physical">
+            <div class="content-spacing">
+            <h3 style="color: var(--secondary-color);"><b>Neurologists</b></h3><br>
+            <p>Neurologists are highly trained clinicians capable of diagnosing complex conditions through detailed history and physical examination.</p><br>
+            <div class="button4">
+                <a class="link2" href="Neurologists.html">Learn more</a>
+            </div>
+            </div>
+        </div>   
+     </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <!-- Start of About us -->
+    <div id="AboutUs">
+
+       <div >
+          <img src="Screenshot (100).png" alt="building">
+       </div>
+
+       <div>
+          <h2 style="color: var(--secondary-color);"><b>About Us</b></h2>
+          <br>
+          <p>Another Life provided the latest in Medical technology and a staff of the highest qualifications to produce the utopia of Medical surgeries. Another Life offers its patients superior healthcare  provided by specialized professionals, using up to date equipment all wrapped in satin ribbon of comfort and relaxation.
+            Another Life hospital is a polyclinic,
+            performed to conform to international high standards of quality medical care.As the patients compose our primary concern,
+           </p>
+          <br>
+          <div class="button4">
+            <a class="link2" href="#">Read more</a>
+          </div>
+          
+        </div>
+
+
+        <!--End of About Us  -->
+    </main>
+
+
+
+<!-- Start of OurValues Section -->
+
+    <div class="hero-image-2" id="OurValues">
+        <div class="box2">
+            <div class="spacee">
+                 <h1 style="color: var(--ourv-head);"><b>Our Values</b></h1>
+                 <h4 style="color: var(--ourv-text);">We Have Best And Responsible Departments </h4>
+            </div>     
+
+            <div id="values">
+                <!--value1-->
+                <div class="item9">
+                    <img src="value1.png" alt="value1">
+                </div>
+
+                <!--value2-->
+                <div class="item9">
+                    <img src="value2.png" alt="value2">
+                </div>
+
+                <!--value3-->
+                <div class="item9">
+                    <img src="value3.png" alt="value3">
+                </div>
+
+                <!--value4-->
+                <div class="item9">
+                    <img src="value4.png" alt="value4">
+                </div>
+
+                <!--value5-->
+                <div class="item9">
+                    <img src="value5.png" alt="value5">
+                </div>
+
+                <!--value 6-->
+                <div class="item9">
+                    <img src="value6.png" alt="value6">
+                </div>
+
+            </div>
+        </div>
+    </div>
+<!-- End of OurValues Section -->
+
+    <br>
+    <br>
+    <br>
+
+    <!-- Start of the image slide bar -->
+<div class="comments">
+   <div id="title">
+        <h1 style="color: var(--secondary-color); text-align:center;">What Patients Say About Us</h1><br><br>
+   </div>
+
+    <div id="slides"> 
+               <div class="mySlides"> 
+                    <img src="comment1.jpg" style="width:100%"> 
+                </div>                  
+                <div class="mySlides"> 
+                     <img src="comment2.jpg" style="width:100%">
+                </div>                  
+                <div class="mySlides"> 
+                     <img src="comment3.jpg" style="width:100%"> 
+                 </div>   
+                 <div class="mySlides"> 
+                    <img src="comment4.jpg" style="width:100%"> 
+                </div>    
+                <div class="mySlides"> 
+                    <img src="comment5.png" style="width:100%"> 
+                </div>  
+                <div style="text-align:center">  
+                    <span class="dot"></span> 
+                    <span class="dot"></span> 
+                    <span class="dot"></span> 
+                    <span class="dot"></span> 
+                    <span class="dot"></span>        
+                </div>
+       <br>
+       <br>
+    </div>     
+       <br> 
+</div>
+    <!-- End of the image slide bar -->
+
+
+
+    <!--START of footer-->
+  <footer class="footer">
+    <div class="footer-top">
+        
+              <div><i class="fa-solid fa-location-dot"></i><span>293 Bank St, Coatbridge,CA, USA</span></div>
+              <div><i class="fa-solid fa-envelope"></i><span>AnotherLife90@gmail.com</span></div>
+              <div><i class="fa-solid fa-phone"></i><span>(432)435-5433</span></div>
+        
+    </div>
+    <br>
+    <br>
+    <br>
+    <div class="container">
+        <div class="row">
+            <div class="footer-col">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#service">Services</a></li>
+                    <li><a href="#AboutUs">About</a></li>
+                    <li><a href="#OurValues">Our Values</a></li>
+                    <li><a href="#title">Feedback</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Follow Us</h4>
+                <div class="social-links">
+                    <a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://www.twitter.com/"><i class="fab fa-twitter"></i></a>
+                    <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div> 
+             <div class="footer-col">
+                <h4>Services</h4>
+                <ul>
+                    <li><a href="heart.html">Cardiovascular care</a></li>
+                    <li><a href="bone.html">Orthopedic clinic</a></li>
+                    <li><a href="kids.html">Children`s Clinics</a></li>
+                    <li><a href="eye.html">Ophthalmologists</a></li>
+                    <li><a href="dentist.html">Dental clinics</a></li>
+                    <li><a href="Neurologists.html">Neurologists</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Contacts</h4>
+                <ul>
+                    <li><a href="#">Location</a></li>
+                    <li><a href="#">Email</a></li>
+                    <li><a href="#">Phone</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        &copy;2022 All Rights Reserved | designed by Amicus
+    </div>
+  </footer>
+<!--END of the new footer-->
+
+<!--javascript of image slide bar-->
+
+<script src="home.js"> </script>
+<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+
+
+</body>
+</html>
+

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="adminHome.css">
+    <title>Admin Page</title>
+</head>
+<body>
+    
+   <div class="wrapper">
+    <div class="cover">
+        <img src="logo5.jpg" alt="cover">
+    </div>
+    <div class="id-section">
+        <div class="circle">
+            <img src="admin.jpg" alt="profile-pic" class="logo">
+        </div>
+        <div class="id">
+            <h2>John Joseph</h2>
+            <h5>Admin | Amicus </h5>
+        </div>
+    </div>
+   </div>
+
+   <main>
+
+    <div>
+        
+        <h2>Customer who registered their appointments Today:</h2><br>
+        <h3>Name: <span id="result0"></span></h3>
+        <h3>Telephone number: <span id="result1"></span></h3>
+        <h3>Date Of The Appointment: <span id="result2"></span></h3>
+        <h3>More info: <span id="result3"></span></h3>
+     </div>
+
+     <br>
+
+     <button type="button" id="readLocalStorage">read data</button>  
+     <br>
+     <button type="button" id="del">delete data</button>
+     <br>
+     <button type="button"><a href="home.html">back to home</a></button>
+     <br>
+     <br>
+     <br>
+     <button type="button" id="dark">dark home</button>
+     <button type="button" id="light">light home</button>
+
+
+  <hr>
+  
+
+   </main>
+
+
+   <script>
+     
+        var result0=document.getElementById("result0");
+        var result1=document.getElementById("result1");
+        var result2=document.getElementById("result2");
+        var result3=document.getElementById("result3");
+        var readLocalStorage=document.getElementById("readLocalStorage");
+        var del = document.getElementById("del");
+        var dark=document.getElementById("dark");
+        var light=document.getElementById("light");
+         
+
+
+        readLocalStorage.onclick=function()
+        {
+            result0.textContent=localStorage.getItem("names");
+            result1.textContent=localStorage.getItem("numbers");
+            result2.textContent=localStorage.getItem("date");
+            result3.textContent=localStorage.getItem("user");
+        }
+        del.onclick=function()
+        {
+            localStorage.removeItem("names");
+            localStorage.removeItem("numbers");
+            localStorage.removeItem("date");
+            localStorage.removeItem("user");
+            result0.textContent=localStorage.removeItem("names");
+            result1.textContent=localStorage.removeItem("numbers");
+            result2.textContent=localStorage.removeItem("date");
+            result3.textContent=localStorage.removeItem("user");
+        }
+       
+        dark.onclick=function(){
+            window.localStorage.setItem("darkMode","true");
+        }
+
+        light.onclick=function(){
+            window.localStorage.setItem("darkMode","false");
+        }
+   </script>
+
+</body>
+</html>

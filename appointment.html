@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="appointment.css">
+    <link rel="shortcut icon" href="medical.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,900&display=swap" rel="stylesheet">
+    <title>Appointment</title>
+</head>
+<body>
+  <div class="popup-box " id="popup">
+    <img src="hire.png" alt="accepted">
+    <h1>Thank You!</h1>
+    <h3>Your Appointment has been Booked Successfully</h3>
+    <br>
+    <button type="button" onclick="ClosePopUp()">Ok</button>
+</div>
+
+    <div class="left">
+        <h2>Make an Appointment Today!</h2>
+        <form method="post" onsubmit="OpenPopUp()">
+            <div class="txt-field">
+                <input type="text" id="name" required>
+                <span></span>
+                <label> Your name</label>
+            </div>
+            <div class="txt-field">
+                <input type="tel" id="telephone" required>
+             <span></span>
+                <label> Phone number</label>
+             </div>   
+             <div class="txt-field" >
+                <input type="date" id="date" min="2022-08-28" max="2022-12-31" required>
+             <span></span>
+                <label> Date</label>
+             </div> 
+             <div class="txt-field">
+                <input type="time" id="time" required>
+             <span></span>
+                <label>Time</label>
+             </div> 
+             <select style="display: block;" class="compo" required>
+                <option disabled hidden selected value="">Departments</option>
+                <option value="Cardiovascular care">Cardiology</option>
+                <option value="Orthopedic clinic">Orthopedic</option>
+                <option value="Children`s Clinics">Pediatrician</option>
+                <option value="Ophthalmologists">Ophthalmologists</option>
+                <option value="Dental clinics">Dental</option>
+                <option value="Neurologists">Neurologists</option>
+             </select>
+             <br>
+            <div class="recaptcha">
+                   <input type="checkbox" id="check" required>
+            </div>
+              <br>
+              <input type="submit" value="Submit" class="click" id="submit" onclick="passvalue()">
+              <div><br></div>
+            
+        </form>
+      
+      </div>
+
+      
+
+    <script>
+
+      let popup=document.getElementById("popup");
+      
+      function OpenPopUp()
+      {
+        event.preventDefault();
+        popup.classList.add("open-popup");
+          
+
+      }
+      function ClosePopUp()
+      {
+          
+         popup.classList.remove("open-popup");
+         window.location.href="home.html";
+
+      }
+
+      function passvalue()
+      {
+        
+        var name=document.getElementById("name").value;
+        localStorage.setItem("names",name);
+
+        var telephone=document.getElementById("telephone").value;
+        localStorage.setItem("numbers",telephone);
+
+        var date=document.getElementById("date").value;
+        localStorage.setItem("date",date);
+
+
+        var time=document.getElementById("time");
+        localStorage.setItem("time",time);
+        return false;
+
+      }
+      
+    </script>
+
+</body>
+</html>

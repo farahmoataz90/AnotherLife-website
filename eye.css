@@ -1,0 +1,388 @@
+*
+{
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+}
+html
+{
+    scroll-behavior: smooth;
+}
+body
+{
+    font-family: 'Lato', sans-serif;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+/* Start of header */
+nav
+{
+    background: white;
+    height: 60px;
+    width: 100%;
+    position: fixed;
+    z-index: 1000;
+    border-bottom: 1px solid rgb(110, 109, 131);
+
+}
+.logo
+{
+    padding: 0 90px;
+}
+nav ul
+{
+    float: right;
+    margin-right: 30px;
+
+}
+nav ul li
+{
+   display: inline-block;
+   line-height: 80px;
+   margin: 0 5px;
+}
+nav ul li a
+{
+    
+    font-size: 17px;
+    padding: 7px 13px;
+}
+a.link:link
+{
+    text-decoration: none;
+    color: black;
+}
+a.link:visited
+{
+    text-decoration: none;
+    color: black;
+
+}
+a.link:hover
+{
+   text-decoration: none;
+   color: rgba(70,91, 205,100);
+   transition: 0.3s;
+
+
+}
+a.link:active
+{
+    text-decoration: none;
+    color: black;
+
+}
+.hero-image
+{
+    margin: 0;
+    padding: 0;
+    background: url(heroeye.jpeg) no-repeat center ;
+    background-size: cover;
+    background-position: 100%;
+    height: 740px;
+    width: 100%;
+    
+    
+}
+.box
+{
+    
+    display: block;
+    height: 740px;
+    background: rgb(43,41,148);
+    background: linear-gradient(90deg, rgba(43,41,148,0.9444152661064426) 0%, rgba(49,47,155,1) 0%, rgba(69,64,232,0.9444152661064426) 0%, rgba(54,52,161,0.9023984593837535) 17%, rgba(59,57,166,0.8603816526610644) 29%, rgba(62,60,170,0.8827906162464986) 37%, rgba(74,82,189,0.8491771708683473) 47%, rgba(76,70,194,0.804359243697479) 50%, rgba(18,53,176,0.3449754901960784) 100%, rgba(70,129,205,0) 100%);
+    color: white;
+    font-size: 20px;
+    word-spacing: 4px;
+    width: 100%;
+}
+.spacing
+{
+    padding-top: 200px;
+    padding-bottom: 50px;
+    padding-right: 50px;
+    padding-left: 50px;
+}
+.button
+{
+    background-color: #0a1658;
+    color: white;
+    padding: 15px 32px;
+    margin-left: 50px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 50px;
+}
+.button2
+{
+    background-color: transparent;
+    color: white;
+    padding: 15px 32px;
+    margin-left: 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 50px;
+    border: 1px solid white;
+    cursor: pointer;
+}
+
+a.link1:link
+{
+    text-decoration: none;
+    color: white;
+}
+a.link1:visited
+{
+    text-decoration: none;
+    color: white;
+}
+a.link1:hover
+{
+   text-decoration: none;
+   color: white;
+
+}
+a.link1:active
+{
+    text-decoration: none;
+    color: white;
+}
+#doctors
+{
+    display: grid;
+    grid-template-columns:  300px 300px 300px ;
+    grid-row-gap: 70px;
+    grid-column-gap: 50px;
+    
+}
+.card
+{
+   display: grid;
+   grid-template-columns: 300px;
+   grid-template-rows: 300px 150px 70px;
+   grid-template-areas: "image" "text" "stats";
+   border-radius: 18px;
+   background: white;
+   box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.9);
+   text-align: center;
+   transition: 0.5s ease;
+   cursor: pointer;
+}
+.card-image
+{
+    grid-area: image;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    background-size: cover;
+}
+.card-image1
+{
+    background-image: url(eye1.jpg);
+}
+.card-image2
+{
+    background-image: url(eye2.jpg);
+    
+
+}
+.card-image3
+{
+    background-image: url(eye3.jpg);
+
+    
+}
+.card-image4
+{
+    background-image: url(eye4.jpg);
+
+}
+.card-image5
+{
+    background-image: url(eye5.jpg);
+
+}
+.card-image6
+{
+    background-image: url(eye6.jpg);
+
+}
+
+.card-text
+{
+    grid-area: text;
+    margin: 25px;
+}
+.card-stats
+{
+    grid-area: stats;
+}
+
+.card-stats .appointment
+{
+    height: 3.5rem;
+    padding: 0 2rem;
+    border-radius: 0.375rem;
+    border: #2843d7;
+    background: #2843d7;
+    color: white;
+    box-shadow: 0 0.2rem 0 0 #02222b;
+    transition: all 0.3s;
+
+}
+.card-stats .appointment:active
+{
+    transform:  translateY(0.3rem);
+    box-shadow: 0 0.2rem 0 0 #2843d7;
+}
+
+.margin
+{
+    margin-left: 200px;
+    margin-top: 150px;
+    margin-bottom: 150px;
+}
+
+.card:hover{
+    transform: scale(1.2);
+    box-shadow: 5px 5px 15px rgba(0,0,0,0.6);
+}
+.checked {
+    color: #2843d7; /*the color of the checked stars*/
+
+  }
+
+/* start of footer */
+
+.container
+{
+    width: 100%; 
+    margin: auto;
+}
+.row
+{
+    display: flex;
+    flex-wrap: nowrap;
+}
+.footer
+{
+    background-color: #0a1658;
+    padding: 70px 0; 
+
+}
+.footer-col
+{
+    width: 25%;
+    padding: 0 15px;
+    margin-left: 48px;
+
+}
+.footer-col h4
+{
+    font-size: 18px;
+    color: white;
+    text-transform: capitalize;
+    margin-bottom: 35px;
+    font-weight: 500;
+    position: relative;
+}
+
+.footer-col h4::before
+{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    background-color: rgb(110, 109, 131);
+    height: 2px;
+    box-sizing: border-box;
+    width: 50px;
+}
+.footer-col ul li:not(:last-child)
+{
+    margin-bottom: 10px;
+
+
+}
+.footer-col ul li a
+{
+    font-size: 16px;
+    color: white;
+    text-decoration: none;
+    font-weight: 300;
+    display: block;
+    transition: all 0.3s ease;
+}
+.footer-col ul li a:hover
+{
+    color: rgb(110, 109, 131);
+    padding-left: 8px;
+}
+.footer-col .social-links a
+{
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    background-color: white;
+    margin: 0 10px 10px 0;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    color: #0a1658;
+    transition: all 0.5s ease;
+
+}
+.footer-col .social-links a:hover
+{
+    color: white;
+    background-color: #0a1658;
+}
+.footer-bottom
+{
+    width: 100vw;
+    padding-bottom: 0;
+    padding-top: 100px;
+    text-align: center;
+    font-size: 10px;
+    color: rgb(110, 109, 131);
+    font-weight: 200;
+}
+.footer-top
+{
+    display: grid;
+    display: inline-grid;
+    grid-template-columns: auto auto auto;
+    grid-column-gap: 50px;
+    margin-left: 200px;
+    margin-right: 50px;
+    
+}
+.footer-top i
+{
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    background-color: white;
+    margin: 0 10px 10px 0;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    color: #0a1658;
+
+}
+.footer-top span
+{
+    font-size: 14px;
+    color: white;
+    text-transform: capitalize;
+    margin-bottom: 35px;
+    font-weight: 300; 
+}
+/* End of footer */
